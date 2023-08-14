@@ -1,9 +1,3 @@
-<style>
-.step {
-    color: skyblue;
-    padding-top: 20pt;
-}
-</style>
 <h1>Install Hadoop On Ubuntu</h1>
 
 <h3>Use Docker</h3>
