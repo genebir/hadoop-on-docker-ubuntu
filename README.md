@@ -233,3 +233,13 @@ worker2
 hdfs namenode -format
 start-all.sh
 ```
+
+<br/>
+<h6>8. Test Hadoop</h6>
+
+```bash
+hdfs dfs -mkdir /input
+hdfs dfs -copyFromLocal /usr/local/hadoop/README.txt /input
+hdfs dfs -ls /input
+hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar wordcount /input/README.txt ~/wordcount-output
+```
